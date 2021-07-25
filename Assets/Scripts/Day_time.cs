@@ -19,7 +19,7 @@ public class Day_time : MonoBehaviour
     void light() //Change the color of light as the sun goes down
     {
         Light lightComp = light_sun.GetComponent<Light>();
-        float H, S, V, r, g, b;
+        float H, S, V;
         Color.RGBToHSV(lightComp.color, out H, out S, out V);
         H -= Time.deltaTime * 0.01f; //change the factor, the factor is the time the day lasts
         lightComp.color = Color.HSVToRGB(H, S, V);

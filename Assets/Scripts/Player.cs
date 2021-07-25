@@ -20,11 +20,11 @@ public class Player : MonoBehaviour
 
     void movement()
     {
-        float horizontalInput = Input.GetAxisRaw("Horizontal"); // 1
-        float horizontalvertical = Input.GetAxisRaw("Vertical"); // 1
+        float horizontalInput = Input.GetAxisRaw("Horizontal");
+        float horizontalvertical = Input.GetAxisRaw("Vertical");
 
-        transform.Translate(horizontalInput * movementSpeed * Time.deltaTime, 0, 0);
-        transform.Translate(0, 0, horizontalvertical * movementSpeed * Time.deltaTime);
+        transform.Translate(-horizontalInput * movementSpeed * Time.deltaTime, 0, 0);
+        transform.Translate(0, 0,-horizontalvertical * movementSpeed * Time.deltaTime);
 
     }
 }
