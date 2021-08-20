@@ -16,6 +16,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         movement();
+        Debug.Log(transform.position.ToString());
     }
 
     void movement()
@@ -27,5 +28,7 @@ public class Player : MonoBehaviour
         transform.Translate(0, 0,-horizontalvertical * movementSpeed * Time.deltaTime);
 
     }
+
+    
 }
 
