@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         movement();
-        Debug.Log(transform.position.ToString());
+        //Debug.Log(transform.position.ToString());
     }
 
     void movement()
